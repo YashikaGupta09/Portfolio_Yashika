@@ -1,0 +1,251 @@
+body {
+    background-color: #361b2d;
+    /* Dark theme background */
+    color: #fff;
+    /* Text color */
+}
+
+/* MENU */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5a3f58;
+    ;
+    /* Darker menu background */
+    padding: 10px;
+}
+
+.left-items {
+    /* Left side items styles */
+}
+
+.right-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right-items li {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.right-items li a {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.right-items li.active a {
+    color: #ffe6b5;
+    text-decoration: underline;
+    /* Color for active menu item */
+}
+
+.right-items li a:hover {
+    /* Add your hover effect here */
+    color: #ffe6b5;
+    /* transform: scale(1.1); */
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.theme-toggle {
+    position: relative;
+}
+
+.theme-toggle label {
+    position: absolute;
+    top: -10px;
+    left: -40px;
+    width: 40px;
+    height: 20px;
+    background-color: #555;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.theme-toggle label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+label {
+    background-color: rgb(237, 237, 237);
+    /* Yellow for light theme */
+}
+
+input[type="checkbox"]:checked+label:after {
+    left: 23px;
+}
+
+
+/* after MENU  */
+.intro-text {
+    text-align: center;
+    margin-top: 105px;
+    /* Adjust margin as needed */
+}
+
+.intro-text h1 {
+    font-family: cursive;
+    font-size: 5vw;
+    /* Very big font size */
+    font-weight: bold;
+    max-width: 73%;
+    /* Limiting to 45% of horizontal space */
+    max-height: 30vh;
+    /* Limiting to 30% of vertical space */
+    margin: 0 auto;
+}
+
+.intro-text span {
+    color: #ffe6b5;
+}
+
+.additional-text,
+.contact-button,
+.learn-more {
+    text-align: center;
+}
+
+.additional-text {
+    margin-top: 71px;
+    margin-bottom: 31px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.contact-button a {
+    padding: 18px 150px;
+    font-family: monospace;
+    font-size: 26px;
+    background-color: #ffe1a6;
+    color: #361b2d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 11px;
+    transition: background-color 0.1s, border 0.1s;
+    /* animation: vibrate 0.8s infinite alternate; Apply the animation */
+}
+
+/* @keyframes vibrate {
+    from {
+        transform: translateX(-3px); /* Move left */
+    /* }
+    to {
+        transform: translateX(3px); /* Move right */
+    /* } 
+}  */
+
+.contact-button a:hover {
+    background-color: #edc983; /* Change background color on hover */
+    border: 2px solid #fff; /* Change border on hover */
+}
+
+.learn-more{
+    margin-top: 30px;
+}
+
+.learn-more a {
+    font-family: monospace;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.learn-more a:hover {
+    color: #ffe1a6;
+    /* Change color on hover if desired */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 69px;
+}
+
+
+/* about me */
+.about-content {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 221px;
+    height: 221px;
+    margin-top: 84px;
+}
+
+.designations {
+    margin-bottom: 20px; /* Space below the designations */
+}
+.designations span{
+    font-size: 22px;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-family: monospace;
+}
+.designations p{
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    font-family: math;
+    line-height: 14px;
+}
+
+.links a {
+    display: inline-flex;
+    align-items: center; /* Align items vertically */
+    margin-right: 10px; /* Space between links */
+    text-decoration: none;
+    color: #fff; /* Link color */
+}
+
+.links a img {
+    width: 20px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Space between image and text */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.intro-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.intro-section p {
+    font-size: 16px; /* Adjust text size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+}
