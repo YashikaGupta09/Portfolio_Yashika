@@ -1,26 +1,20 @@
-const themeToggleBtn = document.getElementById('theme-toggle-btn');
+const toggleBtn = document.getElementById('theme-toggle-btn');
 
-themeToggleBtn.addEventListener('change', function() {
-    if (this.checked) {
-        document.body.classList.add('light-theme');
-    } else {
-        document.body.classList.remove('light-theme');
-    }
-});
+function toggleTheme() {
+    document.body.classList.toggle('light-theme');
+}
 
+toggleBtn.addEventListener('change', toggleTheme);
 
-// Get all menu items
 const menuItems = document.querySelectorAll('.right-items li');
 
-// Add event listener to each menu item
 menuItems.forEach(item => {
     item.addEventListener('click', function() {
-        // Remove 'active' class from all menu items
+        
         menuItems.forEach(item => {
             item.classList.remove('active');
         });
 
-        // Add 'active' class to the clicked menu item
         this.classList.add('active');
     });
 });
@@ -34,7 +28,7 @@ function revealText() {
         setTimeout(() => {
             text.classList.add('show');
         }, delay);
-        delay += 1000; // Adjust the delay between each line
+        delay += 1000;
     });
 }
 

@@ -49,13 +49,10 @@ body {
 .right-items li.active a {
     color: #ffe6b5;
     text-decoration: underline;
-    /* Color for active menu item */
 }
 
 .right-items li a:hover {
-    /* Add your hover effect here */
     color: #ffe6b5;
-    /* transform: scale(1.1); */
     transform: scale(1.2);
     text-decoration: underline;
 }
@@ -93,30 +90,23 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked+label {
     background-color: rgb(237, 237, 237);
-    /* Yellow for light theme */
 }
 
 input[type="checkbox"]:checked+label:after {
     left: 23px;
 }
 
-
-/* after MENU  */
 .intro-text {
     text-align: center;
     margin-top: 105px;
-    /* Adjust margin as needed */
 }
 
 .intro-text h1 {
     font-family: cursive;
     font-size: 5vw;
-    /* Very big font size */
     font-weight: bold;
     max-width: 73%;
-    /* Limiting to 45% of horizontal space */
     max-height: 30vh;
-    /* Limiting to 30% of vertical space */
     margin: 0 auto;
 }
 
@@ -148,7 +138,6 @@ input[type="checkbox"]:checked+label:after {
     font-weight: bold;
     border-radius: 11px;
     transition: background-color 0.1s, border 0.1s;
-    /* animation: vibrate 0.8s infinite alternate; Apply the animation */
 }
 
 /* @keyframes vibrate {
@@ -162,9 +151,7 @@ input[type="checkbox"]:checked+label:after {
 
 .contact-button a:hover {
     background-color: #edc983;
-    /* Change background color on hover */
     border: 2px solid #fff;
-    /* Change border on hover */
 }
 
 .learn-more {
@@ -180,10 +167,8 @@ input[type="checkbox"]:checked+label:after {
 
 .learn-more a:hover {
     color: #ffe1a6;
-    /* Change color on hover if desired */
 }
 
-/* Footer */
 .footer {
     text-align: center;
     padding: 1px;
@@ -192,8 +177,6 @@ input[type="checkbox"]:checked+label:after {
     margin-top: 69px;
 }
 
-
-/* about me */
 .about-content {
     text-align: center;
 }
@@ -207,14 +190,12 @@ input[type="checkbox"]:checked+label:after {
 
 .designations {
     margin-bottom: 20px;
-    /* Space below the designations */
 }
 
 .designations span {
     font-size: 22px;
     color: blanchedalmond;
     font-weight: bold;
-    /* font-family: monospace; */
     font-family: "Ubuntu", sans-serif;
     font-weight: 7 00;
     font-style: normal;
@@ -232,26 +213,19 @@ input[type="checkbox"]:checked+label:after {
 .links a {
     display: inline-flex;
     align-items: center;
-    /* Align items vertically */
     margin-right: 10px;
-    /* Space between links */
     text-decoration: none;
     color: #fff;
-    /* Link color */
 }
 
 .links a img {
     width: 20px;
-    /* Adjust size as needed */
     height: auto;
-    /* Maintain aspect ratio */
     margin-right: 5px;
-    /* Space between image and text */
 }
 
 .links a:hover {
     text-decoration: underline;
-    /* Underline on hover */
 }
 
 .intro-section {
@@ -263,20 +237,14 @@ input[type="checkbox"]:checked+label:after {
 
 .intro-section p {
     font-size: 16px;
-    /* Adjust text size as needed */
     line-height: 1.5;
-    /* Adjust line height as needed */
 }
 
-/* Contact me */
-/* Styles for the typewriter effect */
-/* Styles for the typewriter effect */
 .typewriter h1 {
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
     overflow: hidden;
-    /* Hide overflow text */
     border-right: 0.15em solid rgb(126, 124, 119);
     white-space: nowrap;
     margin-top: 28px;
@@ -286,31 +254,25 @@ input[type="checkbox"]:checked+label:after {
     width: 54%;
 }
 
-/* Typing animation keyframes */
 @keyframes typing {
     from {
         width: 0;
-        /* Start from zero width */
     }
 
     to {
         width: 54%;
-        /* End at full width */
     }
 }
 
-/* Blinking cursor animation keyframes */
 @keyframes blink-caret {
 
     from,
     to {
         border-color: transparent;
-        /* Hide cursor at start and end */
     }
 
     39% {
         border-color: rgb(208, 201, 188);
-        /* Show cursor in middle */
     }
 }
 
@@ -335,14 +297,12 @@ input[type="checkbox"]:checked+label:after {
 
 .social-links {
     list-style: none;
-    /* Remove default list styles */
     padding: 0;
     margin-top: -34px;
 }
 
 .social-links li {
     margin-bottom: 9px;
-    /* Adjust spacing between items */
 }
 
 .social-links li a {
@@ -381,7 +341,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .resume-download {
-    text-align: center; /* Center-align the button */
+    text-align: center; 
     font-family: "Lilita One", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -391,13 +351,13 @@ input[type="checkbox"]:checked+label:after {
 .btn-download {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #daa236; /* Blue color, change as needed */
-    color: #fff; /* White text color */
+    background-color: #daa236; 
+    color: #fff; 
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .btn-download:hover {
-    background-color: #ffbf45; /* Darker blue on hover */
+    background-color: #ffbf45;
 }
